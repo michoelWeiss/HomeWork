@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Community</title>
+    <link href="base.css" rel="stylesheet" />
+    <style>
+         h1{
+            text-align: center;
+        }
+        img{
+            height: 225px;
+            margin-left: 0px;
+            margin-right: 0px;
+            display: inline-block;
+        }
+        p {
+            width: 300px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: inline-block;
+       }
+    div{
+        max-height: 500px;
+        margin-bottom: 50px;
+    }
+    
+        .email{
+            text-align: center;
+            font-size: 1.5em;
+        }
+        strong{
+            font-style: italic;
+        }
+        .R-rotate{
+            rotate: 10deg;
+        }
+        .L-rotate{
+            rotate: -10deg;
+        }
+        .ribbon {
+        position: relative;
+        width: 300px; /* Adjust width as needed */
+        height: 150px; /* Adjust height as needed */
+        overflow: hidden; 
+         background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); 
+        width: 100%;
+        height: 100%; 
+        transform: skewX(-45deg); /* Adjust skew angle for ribbon shape */
+    }
+
+    /* Style for the rainbow gradient */
+    .ribbon::before {
+        content: "";
+       
+      
+        z-index: -1;
+        top: 0;
+        left: 0;
+       
+    }
+    </style>
+</head>
+<body>
+    <a href="index.html">Home</a> | <a href="Menu.html">Menu</a> 
+    <h1>Join The Bubbe's Kitchen <strong>Family</strong></h1>
+    <div class = "ribbon"></div>
+ <div>
+         <img  src="../../shared/images/famPic1.jpg" alt="Picture Of Our Happy Customers" class = "L-rotate">
+         <p class = "R-rotate">"I had an incredible dining experience at Bubby's Kitchen! The BBQ ribs were tender 
+            and packed with flavor, and the sides were just as delicious. The cozy atmosphere and friendly
+             staff made my visit even better. Highly recommend for any meat lover!"
+             <span>- Yehuda P</span>
+            </p>
+
+        </div>
+        <div class = "ribbon"></div>
+    <div> 
+        <img src="../../shared/images/famPic2.jpeg" alt="Picture Of Our Happy Customers" class = "R-rotate">
+        <p  class = "L-rotate">"Bubby's Kitchen is a meat lover's paradise. The Bubby's Special Burger was juicy and perfectly cooked,
+             and the sweet potato fries were the best I've ever had. Five stars for great food and excellent service!"
+             <span>- Rabbi Freidman</span>
+            </p>
+    </div>
+    <div class = "ribbon"></div>
+    <div>
+         <img src="../../shared/images/famPic3.jpeg" alt="Picture Of Our Happy Customers" class = "L-rotate">
+         <p  class = "R-rotate">"Our family had an amazing dinner at Bubby's Kitchen! The kids loved the pulled pork sandwiches, and I couldn't
+             get enough of the grilled chicken. The coleslaw was a refreshing side dish. We'll definitely be back for more delicious meat dishes."
+             <span>- Josh</span>
+            </p>
+        </div>
+        <div class = "ribbon"></div>
+    <div> 
+        <img src="../../shared/images/famPic4.jpeg" alt="Picture Of Our Happy Customers" class = "R-rotate">
+        <p  class = "L-rotate">"I too the Challah backing class and I had tons of fun. I'll defenetly be coming back"
+             <span>- Patrick S.</span>
+            </p>
+    </div>
+    <div class = "ribbon"></div>
+    <div> 
+        <img src="../../shared/images/famPic5.jpeg" alt="Picture Of Our Happy Customers" class = "L-rotate">
+        <p  class = "R-rotate">"I visited Bubby's Kitchen for brunch, and it was a fantastic experience. The sausage and egg scramble
+             was perfectly seasoned, and the sides were a pleasant surprise. The relaxed, friendly vibe makes it a great 
+             place to catch up with friends. Can't wait to return!"
+             <span>- Tim F.</span>
+            </p>
+    </div>
+   
+
+    <a href="mailto:BubbesKitchen@gmail.com"> <h3 class = "email">Email Us To Add <strong>Your</strong> Picture</h3> </a>
+</body>
+</html>
