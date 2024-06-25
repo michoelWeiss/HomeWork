@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Facts</title>
+    <link href="base.css" rel="stylesheet" />
+    <style>
+        strong {
+            display: block;
+            font-size: 1.35em;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: auto;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+        }
+
+        td {
+            height: 37px;
+        }
+
+        td:not(:first-child) {
+            text-align: right;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.07em;
+        }
+
+        td:first-child,
+        td:first-child a {
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        caption {
+            caption-side: bottom;
+            text-align: center;
+        }
+
+        tfoot {
+            background-color: lightblue;
+            color: rgb(212, 76, 76);
+
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: rgb(245, 201, 201);
+        }
+
+        tbody tr:nth-child(2n + 1) {
+            background-color: rgb(202, 243, 205);
+        }
+
+        table tr:not(thead :first-child, tfoot :last-child):hover {
+            background-color: #388e3c;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-links"><a href="index.html">Home</a> | <a href="Menu.html">Menu</a> | <a
+            href="allergenInfo.html">Allergen Info</a></div>
+    <h1><strong>Bubby's </strong>Nutrition Facts</h1>
+    <table>
+        <caption>Last Updated 06/21/2024</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Calories</th>
+                <th>Saturated Fat</th>
+                <th>Trans Fat</th>
+                <th>Cholesterol</th>
+                <th>Sodium</th>
+                <th>Dietary Fiber</th>
+                <th>Sugars</th>
+                <th>Added Sugars</th>
+                <th>Protein</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="Chullent.html">Thursday Night Chullent</a></td>
+                <td>350</td>
+                <td>5g</td>
+                <td>0.5g</td>
+                <td>45mg</td>
+                <td>800mg</td>
+                <td>6g</td>
+                <td>5g</td>
+                <td>1g</td>
+                <td>15g</td>
+            </tr>
+            <tr>
+                <td><a href="potatoKugel.html">Hot And Ready Potato Kugel</a></td>
+                <td>200</td>
+                <td>3g</td>
+                <td>0g</td>
+                <td>20mg</td>
+                <td>400mg</td>
+                <td>2g</td>
+                <td>3g</td>
+                <td>0g</td>
+                <td>4g</td>
+            </tr>
+            <tr>
+                <td><a href="deliRoll.html">Meaty Deli Roll</a></td>
+                <td>300</td>
+                <td>6g</td>
+                <td>1g</td>
+                <td>30mg</td>
+                <td>600mg</td>
+                <td>1g</td>
+                <td>2g</td>
+                <td>0g</td>
+                <td>10g</td>
+            </tr>
+            <tr>
+                <td><a href="hotPopperd.html">Hot Poppers</a></td>
+                <td>250</td>
+                <td>4g</td>
+                <td>0g</td>
+                <td>25mg</td>
+                <td>500mg</td>
+                <td>2g</td>
+                <td>3g</td>
+                <td>1g</td>
+                <td>6g</td>
+            </tr>
+            <tr>
+                <td><a href="meatBureka.html">Meat Burekas</a></td>
+                <td>350</td>
+                <td>7g</td>
+                <td>0.5g</td>
+                <td>40mg</td>
+                <td>650mg</td>
+                <td>2g</td>
+                <td>3g</td>
+                <td>1g</td>
+                <td>12g</td>
+            </tr>
+            <tr>
+                <td><a href="pulledBrisketBurger.html">Pulled Brisket Burger</a></td>
+                <td>400</td>
+                <td>8g</td>
+                <td>1.5g</td>
+                <td>60mg</td>
+                <td>700mg</td>
+                <td>1g</td>
+                <td>4g</td>
+                <td>2g</td>
+                <td>20g</td>
+            </tr>
+            </a>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="10">* Values are approximate and may vary based on ingredients and preparation methods.
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

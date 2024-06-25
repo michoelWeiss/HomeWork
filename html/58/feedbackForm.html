@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="base.css" rel="stylesheet" />
+
+    <style>
+        header {
+            margin-bottom: 2em;
+        }
+
+        header img {
+            width: 45%;
+            height: auto;
+        }
+
+        h1 {
+            width: 35%;
+            height: auto;
+            transform: translate(90%);
+            /* Centers the block */
+        }
+
+        form input {
+            width: 100%;
+            display: block;
+        }
+
+        input[type="radio"] {
+            width: 20px;
+            /* Adjust the width as needed */
+            height: 20px;
+            /* Adjust the height as needed */
+            margin-right: 10px;
+            /* Space between the radio button and the label */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav-links">
+        <a href="index.html">Home Page</a> | <a href="Menu.html">Menu</a> | <a href="theCommunity.html">Meet The
+            Community</a>
+    </div>
+    <header>
+
+        <h1>Bubbe's Kitchen FeedBack Form</h1>
+        <h2>Share Your Experence With Us So We Can Offer Better Service EveryTime!</h2>
+        <img src="../../shared/images/ourStaff.webp" alt="Our Staff">
+
+    </header>
+    <form method="post">
+        <label>
+            First Name:
+            <input name="first" required />
+        </label>
+
+        <label>
+            Last Name:
+            <input name="last" />
+        </label>
+
+        <label>
+            What Time Of Day Did You Visit Us:
+            <input type="time" name="time" />
+        </label>
+
+        <label>
+            Was It Busy:
+            <input type="radio" name="busy" value="Very Busy" checked />Very Busy
+            <input type="radio" name="busy" required value="Busy" />Busy
+            <input type="radio" name="busy" required value="Not Busy" />Not Busy
+            <input type="radio" name="busy" required value="Empty" />Empty
+        </label>
+
+        <label for="server">Who Was Your Server</label>
+        <input type="text" name="server" id="server">
+
+        <label>How Would You Rate There Service
+            <input type="text" name="serviceRating">
+        </label>
+
+        <label>Would You Visit Us Again
+            <input type="text" name="return">
+        </label>
+
+        <label>Do You Have Any Additional Comments
+            <input type="text" name="comments">
+        </label>
+
+        <label>
+            Email:
+            <input type="email" name="email" required />
+        </label>
+
+        <button>Submit</button>
+    </form>
+
+
+
+</body>
+
+</html>
