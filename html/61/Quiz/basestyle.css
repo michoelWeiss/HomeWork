@@ -1,0 +1,168 @@
+html, body {
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    left: 0;
+    right: 0;
+    font-family: 'helvetica','arial','sans-serif';
+}
+header,footer{
+    background-color: black;
+    color: white;
+    display:block;
+    width: 100%;
+    height: 2em;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding-left: 10.5%;
+    font-size: .8em;
+    z-index: 1000;
+}
+header{
+    top: 0;
+    padding-bottom: 15px;
+}
+footer{
+    padding-top: 15px;
+    bottom: 0;
+}
+.pageHead em{
+    font-style: italic;
+}
+section{
+    margin-bottom: 2em;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0;
+    gap: 1em;
+}
+nav ul a{
+    color: white;
+    text-decoration: none; 
+}
+nav a:hover{
+    text-decoration: underline;
+    color: red;
+}
+.pageHead{
+    background-color: rgb(195, 195, 195);
+    height: 9em;
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+#pageBody{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#products > div{
+ display: flex;
+}
+img, video{
+    width: 100%;
+}
+#products > div > div {
+    position: relative;
+    flex: 1; 
+    padding: 10px; 
+   
+}
+#products > div > div:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px; 
+    height: 100%; 
+    background-color: grey; 
+}
+#products > div > div h4{
+   margin-bottom: 0.5em;
+   margin-top: 1em;
+   text-align: center;
+}
+#signUp{
+    background-color: rgb(202, 198, 198);
+    height: 8em;
+    border-radius: 7px;
+}
+#signUp > form{
+    text-align: center;
+    padding-top: 1.5em;
+}
+#signUp > form input,button{
+    border-radius: 5px;
+}
+#signUp > form input{
+    box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.6);
+    width: 11em;
+    margin-right: .5em;
+}
+#financials { 
+    min-width: 400px;
+}
+.table-container {
+    overflow-x: auto;
+}
+.table-container  table{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+#financials h3, table thead td{
+   text-align: center;
+}
+#financials table th, td{
+    border: 1px solid black;
+    padding: 2px;
+}
+#financials  table td:last-child{
+    color: red;
+}
+#financials  table td{
+    text-align: right;
+}
+#financials  table td:nth-child(1){
+    font-weight: bold;
+}
+#financials  table tbody tr:nth-child(odd){
+    background-color: rgb(226, 228, 245);
+}
+#financials  table tbody tr:hover{
+    background-color: rgb(126, 199, 223);
+}
+
+@media (max-width: 1000px) {
+    #signUp{
+        height: 12em;
+    }
+    #signUp > form label,button{
+        display: block;
+        margin: 8px auto;
+    }
+}
+
+@media (max-width: 800px) {
+    #products > div {
+        flex-direction: column;
+    }
+    #products > div > div {
+        width: 100%; 
+        padding: 10px 0; 
+        flex-direction: column;
+    }
+    #products > div > div:not(:last-child)::after {
+        display: none;
+    }
+   
+}
+
+
+
+
