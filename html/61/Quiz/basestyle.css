@@ -16,7 +16,7 @@ header,footer{
     position: fixed;
     left: 0;
     right: 0;
-    padding-left: 10.5%;
+    padding-left: 11%;
     font-size: .8em;
     z-index: 1000;
 }
