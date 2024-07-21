@@ -1,4 +1,4 @@
 'use strict'
 
 const myName = "michoel weiss";
-const myEmail = "michoelweissmw@gmail.com";
+const myEmail = "michoelweissmw@gmail.com"
