@@ -1,18 +1,21 @@
 
 window.app = (function (myApp) {
-'use strict';
+    'use strict';
 
-myApp.createCounter = createCounter || {};
+    myApp.createCounter = createCounter || {};
 
-function createCounter(){
-    let count = 0;
-   
-    return {
-        increment: () => {count++;},
-        getCount: () => count
-    }    
-}
+    let numOfCounters = 0;
 
-return myApp;
+    function createCounter() {
+        let count = 0;
+        numOfCounters++;
+        return {
+            increment: () => { count++; },
+            getCount: () => count,
+            numOfCountersMade: () => numOfCounters
+        }
+    }
+
+    return myApp;
 
 }(window.app || {}));
