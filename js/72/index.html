@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <hr>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsum optio possimus est laborum at recusandae
+    atque, commodi repellendus, quo ex molestiae officia fugiat debitis nemo expedita aperiam accusamus minima
+    assumenda! Nobis officia amet velit ea earum exercitationem tempore eveniet quam asperiores dicta sapiente culpa
+    impedit consequuntur ex quaerat, iste delectus accusamus quae sint obcaecati neque sit expedita? Exercitationem
+    fugit minus autem ullam voluptas dignissimos natus numquam consequatur ipsum quos excepturi modi assumenda
+    distinctio consequuntur quasi deleniti quia minima mollitia voluptatibus, accusantium nisi hic! Doloribus,
+    dignissimos mollitia nobis neque rem perferendis explicabo dolorum corporis architecto sint, asperiores soluta saepe
+    eligendi quam? Ex, vel magnam sequi deleniti dolorem quam tenetur harum, voluptatum quibusdam veniam sed expedita
+    atque quae et! Cupiditate totam quae ducimus ullam, ea blanditiis perferendis aspernatur placeat.
+    <script src="messageBox.js"></script>
+
+    <script>
+        const buttArray = ['Yes', 'No', 'Ok', 'Maybe', 'sure'];
+        const funcArray = [
+            () => { console.log('yes'); document.body.style.backgroundColor = 'green'; },
+            () => { console.log('no'); document.body.style.backgroundColor = 'red'; },
+            () => { console.log('ok'); document.body.style.backgroundColor = 'blue'; },
+            () => { console.log('maybe'); document.body.style.backgroundColor = 'orange'; }
+        ];
+
+        pcsMessageBox('Is this enough homework?', buttArray, funcArray);
+    </script>
+</body>
+
+</html>
