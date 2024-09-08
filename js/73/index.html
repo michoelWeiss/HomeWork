@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="textBody">
+        <h1 id="myText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nobis recusandae perferendis quis
+            qui,
+            nulla exercitationem laudantium beatae, accusamus, asperiores molestiae necessitatibus at autem. Enim.</h1>
+    </div>
+
+
+
+
+    <script src="pcsTools.js"></script>
+    <script>
+        const text = window.pcsTools.get('#myText');
+
+        let counter = 0;
+        const colors = [
+            'rgb(255, 99, 71)', 'rgb(135, 206, 235)',
+            'rgb(255, 165, 0)', 'rgb(34, 139, 34)',
+            'rgb(75, 0, 130)', 'rgb(255, 105, 180)',
+            'rgb(255, 255, 0)', 'rgb(0, 191, 255)',
+            'rgb(128, 0, 128)', 'rgb(255, 0, 0)'
+        ];
+
+
+        window.pcsTools.click(text, () => {
+            window.pcsTools.setCss(text, 'color', colors[counter]);
+            counter++;
+            if (counter === colors.length) {
+                counter = 0;
+            }
+        });
+
+    </script>
+</body>
+
+</html>
