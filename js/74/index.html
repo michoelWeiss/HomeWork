@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="myText">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, adipisci aperiam reprehenderit accusamus nisi
+        exercitationem rerum voluptatibus a placeat sunt deleniti. Dignissimos ducimus architecto earum corporis
+        cupiditate repellendus voluptas fugit aliquam unde quidem fuga praesentium eius rem esse doloremque, doloribus
+        reiciendis inventore veniam suscipit. Delectus quas sint, corrupti labore, accusantium facere non totam
+        voluptates excepturi molestiae possimus rerum amet provident quia. Tenetur veritatis laudantium, atque labore,
+        fugit eum pariatur impedit voluptatem alias quisquam animi sit. Obcaecati quasi excepturi deleniti minus ipsa
+        cumque iusto eos quo odit fuga. Dolores libero suscipit, dicta commodi exercitationem atque error. Modi libero
+        voluptatum asperiores! Similique tempore voluptate quibusdam quos vitae dignissimos suscipit fugit nobis
+        accusantium beatae esse rem provident quaerat laboriosam voluptas expedita ipsam nihil incidunt, vero impedit
+        non omnis itaque praesentium? Dicta, corrupti dolor suscipit culpa aperiam molestiae possimus iure eius quos
+        odio doloremque laudantium libero quibusdam modi minus accusamus ratione incidunt reiciendis similique aliquid
+        ipsam totam. Ipsa maxime laudantium sequi earum beatae quas qui veritatis iste, voluptatum, consequatur
+        aspernatur distinctio soluta est, ex ab assumenda vel? Nulla, similique eveniet, soluta itaque omnis laboriosam
+        possimus numquam, ab velit ducimus debitis? Illum, aperiam voluptate neque quam dignissimos nesciunt corporis
+        provident magni. Fugit unde, ipsum suscipit dolorum excepturi rem, aut nesciunt iusto deserunt asperiores ad
+        laborum magni eveniet. Quas dolor, ad ducimus debitis possimus voluptatibus nemo quisquam quaerat atque a omnis
+        totam ea natus obcaecati cumque voluptatem quasi quam laudantium hic. Similique corrupti deleniti reiciendis
+        quam, doloribus quisquam adipisci iure id minus esse, earum, tenetur dolores!
+    </h1>
+
+    <div id="div1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, id.</div>
+    <div id="div2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolor?</div>
+
+    <button id="myButton">this is my button</button>
+    <script src="base.js"></script>
+    <script>
+        let text = pcs('#myText');
+        text.changecolor(10, 350);
+
+        text.data('foo', 5);
+        console.log(text.data('foo'));
+
+        text.data('hotdog', 10);
+        console.log(text.data('hotdog'));
+
+        let div1 = pcs('#div1');
+        let div2 = pcs('#div2');
+
+        div1.data('foo', 'div1');
+        div2.data('foo', 'div2');
+        console.log(div1.data('foo'));
+        console.log(div2.data('foo'));
+    </script>
+</body>
+
+</html>
