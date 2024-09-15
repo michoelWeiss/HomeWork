@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        #container {
+            background-color: rgb(118, 97, 236);
+            width: 25%;
+            height: 100px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 3px rgba(18, 19, 19, 0.5);
+            margin: 20px;
+        }
+
+        #displayFileDiv {
+            width: 50%;
+            height: auto;
+            background-color: rgb(228, 215, 250);
+            font-size: 1.2em;
+        }
+
+        #note {
+            background-color: rgb(139, 126, 126);
+        }
+
+        .sr-only {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        #spinner {
+            margin: 25px;
+            padding: 5px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h3>file name</h3>
+        <input type="text" id="fileLocationInput">
+        <button id="loadFileButt">load file</button>
+        <div id="note">(the file locations are myFile.text and myFile2.text)</div>
+    </div>
+
+    <div id="spinner" style="display: none;">
+        <span class="sr-only">Loading...</span>
+        <div class="spinner-border" role="status"></div>
+    </div>
+
+    <div id="displayFileDiv">display files here</div>
+
+
+
+
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="base.js"></script>
+
+</body>
+
+</html>
