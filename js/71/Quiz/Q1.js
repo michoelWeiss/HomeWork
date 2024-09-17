@@ -5,6 +5,7 @@
 
         let tempArray = [];
 
+        // SL - not at all a problem but this would be a nice one liner...
         array.forEach(element => {
             tempArray.push(func(element));
         });
@@ -28,3 +29,4 @@
 
 }());
 
+// SL - nice!

@@ -2,6 +2,7 @@
 window.app = (function (myApp) {
     'use strict';
 
+    // SL - whats this? createCounter is either the function defined later or an empty object? Lucky for you, the function exists...
     myApp.createCounter = createCounter || {};
 
     let numOfCounters = 0;
@@ -19,3 +20,5 @@ window.app = (function (myApp) {
     return myApp;
 
 }(window.app || {}));
+
+// SL - nice

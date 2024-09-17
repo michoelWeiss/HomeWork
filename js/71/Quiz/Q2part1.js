@@ -14,3 +14,6 @@ window.app = (function (myApp) {
     return myApp;
 
 })(window.app || {});
+
+// SL - nice!
+// SL - not a problem, but we didnt really need the passing in and ability for counter to alreayd exist - we dont plan on working on it on multiple files

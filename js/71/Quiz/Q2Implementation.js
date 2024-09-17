@@ -1,3 +1,4 @@
+// SL - ever hear of a for loop?
 app.counter.increment();
 app.counter.increment();
 app.counter.increment();
@@ -35,3 +36,6 @@ myCounter2.increment();
 myCounter2.increment();
 
 console.log(app.counter.getCount(), myCounter1.getCount(), myCounter2.getCount());
+
+// SL - nice!
+// SL - grade - 98
