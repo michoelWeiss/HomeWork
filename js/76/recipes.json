@@ -1,0 +1,141 @@
+[
+    {
+        "name": "Thursday Night Chulent",
+        "description": "A hearty stew bursting with flavors, perfect for a cozy evening.",
+        "image": "../../shared/images/chulentPic.jpeg",
+        "imageDesc": "picture of Thursday Night Chullent",
+        "ingredients": [
+            "1 lb beef (brisket or stew meat)",
+            "1 cup barley",
+            "1/2 cup kidney beans",
+            "1/2 cup white beans",
+            "4-5 potatoes, peeled and quartered",
+            "1 large onion, chopped",
+            "3 cloves garlic, minced",
+            "2 tsp paprika",
+            "1 tsp cumin",
+            "Salt and pepper to taste",
+            "Water or beef broth to cover"
+        ],
+        "instructions": [
+            "1. In a large pot, heat oil and sauté onions until translucent.",
+            "2. Add garlic and beef, browning the meat on all sides.",
+            "3. Add barley, beans, potatoes, and seasonings.",
+            "4. Cover with water or beef broth and bring to a boil.",
+            "5. Reduce heat to low, cover, and simmer overnight or at least 6-8 hours.",
+            "6. Stir occasionally and check water level, adding more if needed."
+        ]
+    },
+    {
+        "name": "Potato Kugel",
+        "description": "A comforting blend of potatoes and spices, baked to golden perfection.",
+        "image": "../../shared/images/potatoKugelPic.jpeg",
+        "imageDesc": "picture of Hot Potato Kugel",
+        "ingredients": [
+            "6 large potatoes, peeled and grated",
+            "1 large onion, grated",
+            "3 eggs",
+            "1/4 cup oil",
+            "2 tsp salt",
+            "1/2 tsp black pepper"
+        ],
+        "instructions": [
+            "1. Preheat oven to 375°F (190°C).",
+            "2. Grate potatoes and onion, then drain excess liquid.",
+            "3. In a large bowl, combine grated vegetables with eggs, oil, salt, and pepper.",
+            "4. Pour mixture into a greased baking dish.",
+            "5. Bake for 1-1.5 hours until the top is golden and crispy."
+        ]
+    },
+    {
+        "name": "Meaty Deli Roll",
+        "description": "A savory delight wrapped in flaky pastry, filled with a variety of deli meats.",
+        "image": "../../shared/images/deliRollPic.jpeg",
+        "imageDesc": "picture of Meaty Deli Roll",
+        "ingredients": [
+            "1 package puff pastry",
+            "1/2 lb corned beef",
+            "1/2 lb pastrami",
+            "1/2 lb turkey breast",
+            "1/4 cup mustard",
+            "1 egg (for egg wash)"
+        ],
+        "instructions": [
+            "1. Preheat oven to 375°F (190°C).",
+            "2. Roll out puff pastry on a lightly floured surface.",
+            "3. Spread mustard over the pastry, then layer deli meats evenly.",
+            "4. Roll up the pastry tightly and seal the edges.",
+            "5. Brush with egg wash and bake for 25-30 minutes until golden brown."
+        ]
+    },
+    {
+        "name": "Hot Chicken Poppers",
+        "description": "Spicy chicken bites packed with flavor, perfect for adding a kick to your meal.",
+        "image": "../../shared/images/hotPoppersPic.jpeg",
+        "imageDesc": "picture of Hot Poppers",
+        "ingredients": [
+            "1 lb chicken breast, cut into bite-sized pieces",
+            "1/2 cup hot sauce",
+            "1 cup breadcrumbs",
+            "1/2 tsp garlic powder",
+            "1/2 tsp paprika",
+            "1/2 tsp cayenne pepper (optional, for extra heat)",
+            "1 egg (for coating)",
+            "Oil for frying or baking"
+        ],
+        "instructions": [
+            "1. Preheat oven to 400°F (200°C) if baking, or heat oil in a deep pan if frying.",
+            "2. In a bowl, coat the chicken pieces with hot sauce.",
+            "3. In another bowl, mix breadcrumbs, garlic powder, paprika, and cayenne pepper.",
+            "4. Dip each chicken piece into the beaten egg, then coat with the breadcrumb mixture.",
+            "5. Place the coated chicken on a baking sheet and bake for 20-25 minutes until crispy and cooked through, or fry in hot oil for 5-6 minutes until golden and crispy.",
+            "6. Serve with your favorite dipping sauce."
+        ]
+    },
+    {
+        "name": "Meat Burekas",
+        "description": "Flaky pastry filled with savory spiced meat, a delicious treat for any time of day.",
+        "image": "../../shared/images/meatBureka.jpeg",
+        "imageDesc": "picture of Meat Burekas",
+        "ingredients": [
+            "1 package puff pastry",
+            "1 lb ground beef",
+            "1 onion, finely chopped",
+            "2 cloves garlic, minced",
+            "1 tsp cumin",
+            "1 tsp paprika",
+            "Salt and pepper to taste",
+            "1 egg (for egg wash)"
+        ],
+        "instructions": [
+            "1. Preheat oven to 375°F (190°C).",
+            "2. In a skillet, sauté onions and garlic until softened.",
+            "3. Add ground beef, cumin, paprika, salt, and pepper. Cook until browned.",
+            "4. Roll out puff pastry and cut into squares.",
+            "5. Place a spoonful of meat mixture in the center of each square, fold over, and seal edges.",
+            "6. Brush with egg wash and bake for 20-25 minutes until golden brown."
+        ]
+    },
+    {
+        "name": "Pulled Brisket Burger",
+        "description": "Tender pulled brisket piled high on a soft bun, bursting with smoky, mouth-watering goodness.",
+        "image": "../../shared/images/pulledBrisketBurger.jpeg",
+        "imageDesc": "picture of Pulled Brisket Burger",
+        "ingredients": [
+            "2 lbs brisket",
+            "1 large onion, sliced",
+            "3 cloves garlic, minced",
+            "1 cup barbecue sauce",
+            "1/2 cup beef broth",
+            "Salt and pepper to taste",
+            "4 burger buns"
+        ],
+        "instructions": [
+            "1. Preheat oven to 300°F (150°C).",
+            "2. Season brisket with salt and pepper. Sear in a hot pan until browned on all sides.",
+            "3. Place brisket in a roasting pan with onions, garlic, barbecue sauce, and beef broth.",
+            "4. Cover and cook for 3-4 hours until tender and easy to pull apart.",
+            "5. Shred brisket and serve on burger buns with extra barbecue sauce."
+        ]
+    }
+]

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            text-align: center;
+        }
+
+        header {
+            background-color: bisque;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h4 {
+            margin: 0;
+            font-size: 1.5em;
+            text-decoration: underline;
+        }
+
+        #recipeNameContainer {
+            text-align: left;
+            max-width: 400px;
+            margin-top: .5em;
+        }
+
+        #recipePageContainer {
+            background-color: rgb(229, 231, 231);
+            padding: 2em;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+            width: 70%;
+            margin: 2em auto;
+        }
+
+        #nameContainer {
+            font-size: 2.5em;
+            color: #333;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 0.5em;
+        }
+
+        #descriptionContainer {
+            font-size: 1.4em;
+            color: #666;
+            margin-bottom: 1.5em;
+            font-style: italic;
+        }
+
+        #imageContainer {
+            width: 50%;
+            margin-bottom: 1.5em;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #ingredientsContainer {
+            background-color: rgb(103, 171, 216);
+            width: 50%;
+            margin: 0 auto 2em;
+            padding: 1em;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px rgb(92, 91, 91);
+            font-size: 1.2em;
+            text-align: left;
+            color: rgb(43, 42, 42);
+        }
+
+        #ingredientsContainer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #ingredientsContainer li {
+            margin-bottom: 0.5em;
+        }
+
+        #instructionsContainer {
+            background-color: rgb(103, 216, 182);
+            width: 50%;
+            margin: 0 auto;
+            padding: 1em;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px rgb(92, 91, 91);
+            font-size: 1.2em;
+            text-align: left;
+            color: #1b1b1b;
+        }
+
+        #instructionsContainer ol {
+            padding-left: 20px;
+        }
+
+        #instructionsContainer li {
+            margin-bottom: 0.5em;
+        }
+
+        #ingredientsContainer h4,
+        #instructionsContainer h4 {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h4>Choose a recipe:</h4>
+        <div id="recipeNameContainer">
+        </div>
+    </header>
+
+    <div id="recipePageContainer">
+        <div id="nameContainer">No recipes currently being displayed</div>
+        <div id="descriptionContainer"></div>
+        <img id="imageContainer" src="" alt="">
+        <div id="ingredientsContainer">
+            <h4>Ingredients</h4>
+            <ul>
+            </ul>
+        </div>
+        <div id="instructionsContainer">
+            <h4>Directions</h4>
+            <ol>
+            </ol>
+        </div>
+    </div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="base.js"></script>
+</body>
+
+</html>
