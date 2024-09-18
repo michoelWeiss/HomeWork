@@ -53,14 +53,18 @@
         }
 
     }
-
+    let recipes;
     async function displayPage(name) {
         try {
-            const r = await fetch('recipes.json');
-            if (!r.ok) {
-                throw new Error(`${r.status} - ${r.statusText}`);
+
+            if (!recipes) {
+                const r = await fetch('recipes.json');
+                if (!r.ok) {
+                    throw new Error(`${r.status} - ${r.statusText}`);
+                }
+                recipes = await r.json();
             }
-            const recipes = await r.json();
+
             for (let i = 0; i < recipes.length; i++) {
                 if (recipes[i].name === name) {
                     let myrecipe = recipes[i];
