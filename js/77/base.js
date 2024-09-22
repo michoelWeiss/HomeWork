@@ -3,27 +3,9 @@
 
     const youtubeVideoContainer = $('<div>').addClass('currentVid').css('position', 'relative');
 
-    const name = $('<h3>').css({
-        'position': 'absolute',
-        'left': '50%',  
-        'transform': 'translateX(-50%)',  
-        'padding': '5px 10px',
-        'background-color': 'rgba(0, 0, 0, 0.3)', 
-        'color': 'black',  
-        'font-size': '2em',
-        'font-weight': 'bold'
-    });
+    const name = $('<h3>').addClass('videoTital');
 
-    const closeButton = $('<button>').text('Close Video').css({
-        'position': 'absolute',
-        'top': '-28px',
-        'right': '0px',
-        'background-color': 'red',
-        'color': 'white',
-        'border': '2px solid black',
-        'padding': '5px 10px',
-        'cursor': 'pointer'
-    }).click(exitSong);
+    const closeButton = $('<button>').text('Close Video').addClass('closeButton').click(exitSong);
 
     const youtubeVideo = $('<video>').attr('controls', true);
     const source = $('<source>').attr('src', '').attr('type', 'video/mp4');
@@ -63,8 +45,8 @@
         name.text(song.name);
 
         setTimeout(() => {
-            const nameHeight = name.outerHeight();  
-            name.css('top', `-${nameHeight + 40}px`);  
+            const nameHeight = name.outerHeight();
+            name.css('top', `-${nameHeight + 40}px`);
         }, 10);
 
         youtubeVideo.get(0).load();
