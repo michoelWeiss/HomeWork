@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #inputcontainer {
+            margin: 10px auto;
+            /* centers the container horizontally */
+            padding: 10px;
+            width: 80%;
+            background-color: antiquewhite;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .info-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .info-header h2 {
+            margin-left: 50px;
+            flex: 1;
+        }
+
+        #thumbnailIcon {
+            width: 150px;
+            height: auto;
+            margin-right: 100px;
+        }
+
+        button {
+            width: 100px;
+            height: 2em;
+            background-color: rgb(247, 247, 101);
+            margin: 10px;
+        }
+
+        input {
+            width: 200px;
+            height: 1.5em;
+        }
+
+        button:hover {
+            transform: scale(1.2);
+            background-color: rgb(238, 238, 31);
+        }
+
+        #map {
+            height: 100%;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="inputcontainer">
+        <h4>Put In A Key Word To Search For 10 Random Results</h4>
+        <input id="userparam" type="text">
+        <button id="load">Load</button>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="../../../class_michoel/myKey.js"></script>
+    <script>
+        const temp = myKey();
+        const key = temp.googleKey();     ////// Insert Your "google" Key Here ///////
+        (g => {
+            var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__",
+                m = document, b = window; b = b[c] || (b[c] = {});
+            var d = b.maps || (b.maps = {}), r = new Set,
+                e = new URLSearchParams, u = () => h ||
+                    (h = new Promise(async (f, n) => {
+                        await (a = m.createElement("script")); e.set("libraries", [...r] + "");
+                        for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q);
+                        a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+                        d[q] = f; a.onerror = () => h = n(Error(p + " could not load."));
+                        a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a)
+                    }));
+            d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n))
+        })({
+            key: key,
+            v: "weekly"
+        });
+    </script>
+    <script src="base.js"></script>
+</body>
+
+</html>
