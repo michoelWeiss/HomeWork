@@ -23,7 +23,7 @@
     async function getLocations() {
         if (input.val()) {
             input.css('background-color', 'white');
-             const myKey = key.geonamesKey();  ////// Insert Your "geonames" Key Here ///////
+             const myKey = temp.geonamesKey();  ////// Insert Your "geonames" Key Here ///////
             try {
                
                 const f = await fetch(`http://api.geonames.org/wikipediaSearch?q=${input.val()}&maxRows=10&username=${myKey}&type=json`);
