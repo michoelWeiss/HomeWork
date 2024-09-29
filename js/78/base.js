@@ -13,7 +13,8 @@
 
     const position = { lat: 40.5797, lng: -97.8371 };
 
-    const map = new Map(document.querySelector("#map"), {
+    const map = new Map(document.querySelector("#map"),
+     {
         zoom: 2,
         center: position,
         mapId: 'DEMO_MAP_ID',

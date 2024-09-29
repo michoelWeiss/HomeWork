@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(4, 0, 255);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #loadPicContainer {
+            background-color: #f0f8ff;
+            height: 3em;
+            width: 50%;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border: 2px solid rgb(24, 0, 161);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #inputWarning {
+            background-color: rgb(170, 167, 167);
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 5px;
+            color: rgb(51, 42, 21);
+        }
+
+        #userPicChose {
+            border-radius: 10px;
+            padding: 5px;
+            width: 70%;
+            border: 1px solid #ccc;
+        }
+
+        #loadPics {
+            border-radius: 10px;
+            padding: 5px 10px;
+            width: 25%;
+            background-color: #87ceeb;
+            border: none;
+            cursor: pointer;
+        }
+
+        #lastPic,
+        #nextPic {
+            border: none;
+            cursor: pointer;
+            width: 20%;
+            height: 4em;
+            margin: 35px;
+            border-radius: 15px;
+            color: black;
+            background-color: rgb(139, 135, 135);
+            font-size: 1.5em;
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        #lastPic:hover,
+        #nextPic:hover {
+            background-color: rgb(151, 147, 147);
+            box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.9);
+        }
+
+        #container {
+            background-color: #b2a0dd;
+            width: 75%;
+            max-width: 1000px;
+            height: 600px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        #imgCardContainer {
+            background-color: bisque;
+            text-align: center;
+            padding-bottom: 20px;
+            width: 450px;
+            min-width: 450px;
+            height: 300px;
+            border-radius: 10px;
+            width: 450px;
+            height: 300px;
+        }
+
+        #title {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        img {
+            max-height: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="loadPicContainer">
+        <input id="userPicChose" type="text">
+        <button id="loadPics">Load Pictures</button>
+    </div>
+    <h4 id="inputWarning">Input Keyword "Dog", "Cat", "Bird", Or "Bunny" To See Picture Display</h4>
+
+    <div id="container">
+        <button id="lastPic">Last</button>
+
+        <div id="imgCardContainer">
+                <h3 id="title">Animal Picture</h3>
+                <img id="animalPic" src="" alt="">
+        </div>
+
+        <button id="nextPic">Next</button>
+    </div>
+
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script src="picgenorator.js"></script>
+</body>
+
+</html>
