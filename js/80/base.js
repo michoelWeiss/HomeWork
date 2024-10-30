@@ -36,32 +36,21 @@
             accessoriesButt.classList.add('moveable');
         }
     }
-   /* const categoryNames = document.querySelectorAll('.category-name');
+
+    const categoryNames = document.querySelectorAll('.category-name');
     categoryNames.forEach(category => {
         category.addEventListener('click', () => {
             const imagePanel = category.nextElementSibling;
-            if (imagePanel.style.display === 'block') {
-                imagePanel.style.display = 'none';
-            } else {
-                imagePanel.style.display = 'block';
-            }
-        });
-    }); */
 
-    const categoryNames = document.querySelectorAll('.category-name');
-categoryNames.forEach(category => {
-    category.addEventListener('click', () => {
-        const imagePanel = category.nextElementSibling;
-        
-        // Hide all other image panels first
-        document.querySelectorAll('.image-panel').forEach(panel => {
-            if (panel !== imagePanel) panel.style.display = 'none';
-        });
+            // Hide all other image panels first
+            document.querySelectorAll('.image-panel').forEach(panel => {
+                if (panel !== imagePanel) panel.style.display = 'none';
+            });
 
-        // Toggle the clicked image panel
-        imagePanel.style.display = imagePanel.style.display === 'block' ? 'none' : 'block';
+            // Toggle the clicked image panel
+            imagePanel.style.display = imagePanel.style.display === 'block' ? 'none' : 'block';
+        });
     });
-});
 
     ///   Make Moveable ///
     let dragging = null;
@@ -96,6 +85,7 @@ categoryNames.forEach(category => {
     let objectsOnScreen = [];
     function AddToArray(img) {
         objectsOnScreen.push(img);
+   //     saveState()
     }
 
     /// Make New Element And Add To Array ///
@@ -179,4 +169,30 @@ categoryNames.forEach(category => {
             }
         }
     }
-}());
+
+    /// Save  ///
+
+    function saveState() {
+        if (objectsOnScreen.length > 0) {
+
+            let saveItems = [];
+            let currenttItem = {};
+
+            objectsOnScreen.forEach(item => {
+console.log(item);
+                currenttItem = {
+                    src: p.attr('src'),
+                    className: p.attr('class'),
+                    top: p.css('top'),
+                    left: p.css('left'),
+                    zIndex: p.css('zIndex'),
+                    ID: f
+                };
+                saveItems.push(currenttItem);
+            });
+
+            localStorage.setItem('parts', JSON.stringify(partsData));
+        }
+
+    }
+}()); 
