@@ -1,0 +1,78 @@
+body {
+    background-image: url('img/Nature-Background-Graphics-66003217-4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+.dropdown-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    z-index: 2000;
+}
+
+.dropdown-content .category {
+    padding: 12px 16px;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+.category:hover {
+    background-color: #f1f1f1;
+}
+
+.image-panel {
+    display: none;
+    background-color: #fff;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.image-panel img {
+    width: 80px; /* Consistent width */
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+.image-panel img:hover {
+    transform: scale(1.05);
+}
+
+.makeNew {
+    border: 2px solid black;
+}
+
+#trashCanContainer {
+    background-color: rgb(132, 223, 207);
+    width: 125px;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin: 10px;
+    user-select: none;
+    pointer-events: none;
+}
+
+#TrashCan {
+    width: 100px;
+}
