@@ -1,0 +1,10 @@
+.container {
+    text-align: center;
+    width: 95em; 
+}
+#newRecipeContainer{
+    margin: 10px;
+}
+#newRecipeContainer button{
+    border: 1px solid black;
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Chulent",
+    "ingredients": ["meat", "potatoes", "all sorts of beans"],
+    "directions": ["put ingredients in pot", "add spices", "cook"],
+    "picture":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0M-B623VB9t8HqOnsKjocWIZVybL7q-0JSA&usqp=CAU"
+  },
+  {
+    "id": 2,
+    "name": "soup",
+    "ingredients": ["water", "vegetables", "spices"],
+    "directions": ["add water to pot", "boil water", "add ingredients"],
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQhaylO1RXKSYk9_nKRISM1DoK1lmI3SfMyw&usqp=CAU"
+  }
+]
