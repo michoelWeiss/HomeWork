@@ -1,0 +1,22 @@
+<form method="POST">
+  <div class="form-group">
+    <label for="first">first:</label>
+    <input id="first" name="first">
+  </div>
+  <div class="form-group">
+    <label for="last">last:</label>
+    <input id="last" name="last" required>
+  </div>
+  <div class="form-group">
+    <label for="email">email:</label>
+    <input id="email" name="email" type="email">
+  </div>
+  <div class="form-group">
+    <label for="phone">phone:</label>
+    <input id="phone" name="phone" type="tel" minlength="10">
+  </div>
+
+  <a href="/">cancel</a>
+  <button type="reset">reset</button>
+  <button>add</button>
+</form>
