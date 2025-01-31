@@ -84,10 +84,7 @@ router.post('/editContact/:id', (req, res, next) => {
 });
 
 router.get('/api/contacts', (req, res, next) => {
-  res.send(`
-    <pre>${JSON.stringify(contacts, null, 2)}</pre>
-    <a href="/">Return</a>
-  `);
+  res.send(contacts);
 });
 
 module.exports = router;

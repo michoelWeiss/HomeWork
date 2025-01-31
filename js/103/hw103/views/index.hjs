@@ -1,4 +1,4 @@
-<a href="/addContact">add contact</a>  <a href="/api/contacts">Contacts API</a>
+<a href="/addContact">add contact</a> 
 <table id="contactsTable">
   <caption>contacts</caption>
   <thead>
