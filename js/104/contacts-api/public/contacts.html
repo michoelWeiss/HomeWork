@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
+      }
+
+      th, td {
+        border: 1px solid black;
+        padding: 1em;
+      }
+
+      .form-group {
+        margin-bottom: .5em;
+      }
+
+      .form-group label {
+        display: inline-block;
+        width: 3em;
+      }
+
+      #addContactForm {
+        display: none;
+      }
+
+      #addContactForm {
+        background-color: lightcyan;
+        border: 1px solid black;
+        padding: 1em;
+
+        width: 15em;
+        height: 9em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -4.5em;
+        margin-left: -7.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="load">load contacts</button>
+    <button id="addContact">add contact</button>
+    <table id="contactsTable">
+      <caption>contacts</caption>
+      <thead>
+        <tr>
+          <th>first</th>
+          <th>last</th>
+          <th>email</th>
+          <th>phone</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="5">no contacts loaded</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form id="addContactForm">
+      <div class="form-group">
+        <label for="first">first:</label>
+        <input id="first" name="first">
+      </div>
+      <div class="form-group">
+        <label for="last">last:</label>
+        <input id="last" name="last" required>
+      </div>
+      <div class="form-group">
+        <label for="email">email:</label>
+        <input id="email" name="email" type="email">
+      </div>
+      <div class="form-group">
+        <label for="phone">phone:</label>
+        <input id="phone" name="phone" type="tel" minlength="10">
+      </div>
+
+      <button id="cancel" type="button">cancel</button>
+      <button type="reset">reset</button>
+      <button>add</button>
+    </form>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="contacts.js"></script>
+  </body>
+</html>
