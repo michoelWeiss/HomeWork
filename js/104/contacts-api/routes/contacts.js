@@ -7,7 +7,7 @@ const debug = debugLib('contacts:api');
 
 /* GET home page. */
 /**/
-router.get('/contacts', (req, res, next) => {
+router.get('/contacts', (req, res, next) => { 
   res.writeHead(301, {
     location: '/contacts.html'
   });
@@ -34,7 +34,7 @@ router.get('/contacts-api', async (req, res, next) => {
     res.status(req.statCode).send(results);
 
   } catch (err) {
-    next(err);
+    next(err); 
   }
 });
 

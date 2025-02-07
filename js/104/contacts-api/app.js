@@ -11,7 +11,7 @@ const __dirname = import.meta.dirname;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hjs');
+app.set('view engine', 'hjs'); 
 
 app.use(logger('dev'));
 app.use(express.json());
