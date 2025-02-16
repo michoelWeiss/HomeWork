@@ -1,0 +1,7 @@
+<form method="POST">
+  <input name="username" required placeholder="username" />
+  <p>Username must be between 3-30 characters.</p>
+  <input name="password" type="password" placeholder="Password" required />
+  <p>Password must be between 3-30 characters. It cannot contain any spaces or special characters.</p>
+  <button>register</button>
+</form>
