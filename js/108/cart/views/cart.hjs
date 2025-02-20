@@ -1,0 +1,12 @@
+{{#cartIsFull}}
+<ul>
+  {{#itemsInCart}}
+  <li>{{item.name}} - ${{item.price}} Quantity - {{quantity}} Total ${{totalPrice}}</li>
+  {{/itemsInCart}}
+  <li>GrandTotal - ${{grandTotal}}</li>
+</ul>
+{{/cartIsFull}}
+
+{{^cartIsFull}}
+<p>No items in cart.</p>
+{{/cartIsFull}}

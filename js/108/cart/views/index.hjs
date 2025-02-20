@@ -1,0 +1,31 @@
+<style>
+    li{
+        margin: 50px;
+        border: 1px solid black;
+    }
+    .quantity_button{
+        margin: 0 10px;
+        border-radius: 10px;
+    }
+</style>
+<h1>{{ title }}</h1>
+<ul>
+    {{#items}}
+    <li>
+        {{id}} {{name}} {{description}}
+        {{price}} {{category}}
+        <img src="{{picture}}" alt="{{name}}" />
+        <form id='form' action="/addToCart" method="POST">
+            <div id="quantity_container">
+                <label>Quantity</label>
+                 <button type="button" class="quantity_button subtract">-</button>
+                <label id="quantity" name="quantity">1</label>
+                 <button type="button" class="quantity_button add">+</button>
+              <input type="hidden" name="quantity" id="quantity_input" value="1"> 
+                  <input type="hidden" name="id" id="item_id" value={{id}}> 
+            </div>
+            <button type="submit">Add to Cart</button>
+        </form>
+    </li>
+    {{/items}}
+</ul>

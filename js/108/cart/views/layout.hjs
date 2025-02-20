@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ title }}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <a href="/">Store</a> | <a href="/cart">Shopping Cart</a>
+  <h1>{{appTitle}}</h1>
+  <hr />
+ {{#areCategorys}}
+<form>
+    <label for="category">Choose a category:</label>
+    <select id="category" name="category">
+      <option value="all">All</option>
+   {{#categoryNames}}
+      <option value={{category}}>{{category}}</option>
+   {{/categoryNames}}
+ </select>
+    <button type="submit">Submit</button>
+  </form>
+ {{/areCategorys}}
+  {{> content}}
+
+  <script>
+    // Restore selection from localStorage
+    document.addEventListener("DOMContentLoaded", function () {
+      const categorySelect = document.getElementById("category");
+      const savedCategory = localStorage.getItem("selectedCategory");
+
+      if (savedCategory) {
+        categorySelect.value = savedCategory;
+      }
+
+      // Save selection on change
+      categorySelect.addEventListener("change", function () {
+        localStorage.setItem("selectedCategory", this.value);
+      });
+    });
+
+    document.querySelectorAll('li').forEach((item) => {
+      const subtractButton = item.querySelector('.subtract');
+      const addButton = item.querySelector('.add');
+      const quantityLabel = item.querySelector('#quantity');
+      const quantityInput = item.querySelector('#quantity_input');
+      const itemId = item.querySelector('#item_id').value;
+      const form = item.querySelector('#form');
+      subtractButton.addEventListener('click', function (e) {
+        e.preventDefault();
+        let currentValue = Number(quantityLabel.textContent);
+        if (currentValue > 1) {
+          currentValue -= 1;
+          quantityLabel.textContent = currentValue;
+          quantityInput.value = currentValue;
+        }
+      });
+
+      addButton.addEventListener('click', function (e) {
+        e.preventDefault();
+        let currentValue = Number(quantityLabel.textContent);
+        currentValue += 1;
+        quantityLabel.textContent = currentValue;
+        quantityInput.value = currentValue;
+      });
+
+      form.addEventListener('submit', function (e) {
+        const quantity = quantityInput.value;
+        const category = new URLSearchParams(window.location.search).get('category') || 'all';
+
+        form.action = `/addToCart?id=${itemId}&quantity=${quantity}&category=${category}`; // Set new action
+      });
+      
+    });
+  </script>
+</body>
+
+</html>
