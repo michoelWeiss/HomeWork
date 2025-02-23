@@ -1,0 +1,19 @@
+#messages {
+  height: 10em;
+  border: 1px solid black;
+  margin-bottom: .5em;
+  overflow-y: auto;
+}
+
+#messageForm {
+  display: flex;
+  gap: .5em;
+}
+
+#msgInput {
+  flex: 1;
+}
+
+#messageContainer {
+  display: none;
+}

@@ -9,7 +9,7 @@ router.use(session({
   saveUninitialized: false
 }));
 
-router.post('/addToCart', async function (req, res, next) { 
+router.post('/addToCart', async function (req, res, next) {
   try {
     const category = req.query.category || 'all';
     const id = req.query.id;
@@ -27,13 +27,13 @@ router.post('/addToCart', async function (req, res, next) {
             item.totalPrice = item.quantity * Number(selectedItem.price);
             flag = true;
           }
-            
+
         });
         if (!flag) {
           cart.push({ quantity, totalPrice: quantity * Number(selectedItem.price), item: selectedItem });
         }
         req.session.shopping_Cart = cart;
-       console.log(req.session.shopping_Cart);
+        console.log(req.session.shopping_Cart);
       }
       else {
         throw new Error(`Could not find animal`);
