@@ -1,0 +1,8 @@
+<link href="stylesheets/addPost.css" rel="stylesheet" />
+
+<form method="POST" id="addPostForm">
+  <label>title: <input name="title" required /></label>
+  <label>post
+  <textarea name="body" required></textarea></label>
+  <button>add post</button>
+</form>
