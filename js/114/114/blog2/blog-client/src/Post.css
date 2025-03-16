@@ -1,0 +1,9 @@
+.comments {
+  border: 1px solid black;
+  font-size: .6em;
+  ;
+}
+
+.comments h2 {
+  margin-bottom: .25em;
+}
